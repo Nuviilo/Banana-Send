@@ -1,0 +1,6 @@
+{
+  "name": "Banana Send",
+  "description": "Send anything. Anywhere. Unlimited file and folder sharing for Windows and Android.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

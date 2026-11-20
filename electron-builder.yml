@@ -1,0 +1,29 @@
+appId: com.bananasend.app
+productName: Banana Send
+copyright: Copyright © 2026 Banana Send
+directories:
+  output: dist-windows
+  buildResources: build
+files:
+  - dist/**/*
+  - electron/**/*
+  - build/icon.ico
+  - build/icon.png
+  - package.json
+win:
+  icon: build/icon.ico
+  target:
+    - target: nsis
+      arch:
+        - x64
+    - target: portable
+      arch:
+        - x64
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Banana Send
+portable:
+  artifactName: Banana-Send-Portable.exe
