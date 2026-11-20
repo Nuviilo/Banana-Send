@@ -1,6 +1,12 @@
 appId: com.bananasend.app
 productName: Banana Send
 copyright: Copyright © 2026 Banana Send
+npmRebuild: false
+buildDependenciesFromSource: false
+extraMetadata:
+  name: banana-send
+  version: 1.0.0
+  main: electron/main.cjs
 directories:
   output: dist-windows
   buildResources: build
@@ -10,6 +16,7 @@ files:
   - build/icon.ico
   - build/icon.png
   - package.json
+  - "!node_modules/**/*"
 win:
   icon: build/icon.ico
   target:
